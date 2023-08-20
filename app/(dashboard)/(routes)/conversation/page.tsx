@@ -83,7 +83,7 @@ export default function ConversationPage() {
               {message.role === "user" && (
                 <span
                   key={Math.random()}
-                  className="flex items-center gap-10 rounded-2xl border-2 bg-black/10 px-3  py-4 text-center shadow-md"
+                  className="flex items-center gap-5 rounded-2xl border-2 bg-black/10 px-3  py-4 text-center shadow-md"
                 >
                   <UserAvatar />
                   {message.content}
@@ -92,7 +92,7 @@ export default function ConversationPage() {
               {message.role === "assistant" && (
                 <span
                   key={Math.random()}
-                  className=" flex items-center gap-10  rounded-2xl  border-2 bg-black/10 px-3  py-4 shadow-md "
+                  className=" flex items-center gap-5  rounded-2xl  border-2 bg-black/10 px-3  py-4 shadow-md "
                 >
                   <AIAvatar />
                   {message.content}
