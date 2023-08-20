@@ -4,7 +4,7 @@ import React from "react";
 export default function Testmo() {
   return (
     <>
-      <section className="body-font mt-6 text-gray-600">
+      <section className="body-font mt-8 text-gray-600">
         <div className="container mx-auto px-5 ">
           <h1 className="title-font mb-6 text-center text-3xl font-medium text-white">
             Testimonials
