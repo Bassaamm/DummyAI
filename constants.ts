@@ -1,1 +1,1 @@
-export const FREE_TIER_LIMIT = 5;
+export const FREE_TIER_LIMIT = 6;
