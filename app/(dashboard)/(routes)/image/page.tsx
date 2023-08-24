@@ -54,6 +54,7 @@ export default function ImagePage() {
       router.refresh();
     }
   }
+  console.log(selectedOption);
   return (
     <div className="m-auto max-w-7xl">
       <Header
@@ -103,7 +104,9 @@ export default function ImagePage() {
                           }`
                         }
                         value={image}
-                      ></Listbox.Option>
+                      >
+                        {image.text}
+                      </Listbox.Option>
                     ))}
                   </Listbox.Options>
                 </Transition>
