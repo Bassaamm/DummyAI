@@ -8,6 +8,7 @@ datasource db {
   relationMode = "prisma"
 }
 
+
 model UseraApiLimit {
   id String @id @default(cuid())
   userId String @unique  
