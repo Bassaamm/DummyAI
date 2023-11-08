@@ -17,7 +17,7 @@ Ai tool
 
     $ npm run start
 
-### You will need to put this env file 
+### You will need to put this in an .env file 
 
 ```bash 
 NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
