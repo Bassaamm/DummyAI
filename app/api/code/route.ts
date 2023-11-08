@@ -11,6 +11,8 @@ const behivor = {
   content:
     "your are code generator you only answer question related to coding, solving coding problems, use markdown code sinppets, use comments to explain needed explantion code lines,don't answer any question that is not related to programing  ",
 };
+export const runtime = 'edge'; // 'nodejs' is the default
+
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
