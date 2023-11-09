@@ -32,7 +32,7 @@ export default function CodePage() {
         content: data.promptInput,
       };
       const newPrompt = [...prompts, userMessage];
-      console.log("herror");
+      console.log("herror", newPrompt);
       const res = await axios.post("/api/code", {
         messages: newPrompt,
       });

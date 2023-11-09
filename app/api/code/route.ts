@@ -11,17 +11,16 @@ const behivor = {
   content:
     "your are code generator you only answer question related to coding, solving coding problems, use markdown code sinppets, use comments to explain needed explantion code lines,don't answer any question that is not related to programing  ",
 };
-export const runtime = 'edge'; // 'nodejs' is the default
 
 export async function POST(req: Request) {
   try {
     const { userId } = auth();
     const body = await req.json();
     const { messages } = body;
-
     if (!userId) {
       return new NextResponse("Unauthorized", { status: 401 });
     }
+    console.log(userId);
 
     if (!configuration.apiKey) {
       return new NextResponse("OpenAI API Key not configured.", {
